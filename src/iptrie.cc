@@ -179,7 +179,7 @@ class IPTrie : public ObjectWrap {
 
       String::Utf8Value ipaddress(args[0]->ToString());
       //int prefix_len = args[1]->ToUint32()->Value();
-	  Local<v8::Context> idk;
+      Local<v8::Context> idk;
       MaybeLocal<v8::Uint32> maybe_local_int = args[1]->ToUint32(idk);
       Local<v8::Uint32> local_int;
       maybe_local_int.ToLocal(&local_int);
@@ -213,7 +213,7 @@ class IPTrie : public ObjectWrap {
 
       String::Utf8Value ipaddress(args[0]->ToString());
       //int prefix_len = args[1]->ToUint32()->Value();
-	  Local<v8::Context> idk;
+      Local<v8::Context> idk;
       MaybeLocal<v8::Uint32> maybe_local_int = args[1]->ToUint32(idk);
       Local<v8::Uint32> local_int;
       maybe_local_int.ToLocal(&local_int);
